@@ -9,7 +9,7 @@ var cache = require('./apicache');
 // const cache = apicache.middleware;
 
     //...
-    // router.get("/front", cache("1 day"), middleware.getUserId, games.findAllActive);
+    router.get("/front", cache("7 day"), middleware.getUserId, games.findAllActive);
     router.get("/front", middleware.getUserId, games.findAllActive);
 
     //...
